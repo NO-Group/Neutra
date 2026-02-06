@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Album details on NEUTRA">
+    <meta name="theme-color" content="#000000">
+    <title>Album — NEUTRA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NEUTRA</a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="uzt.html" class="nav-link">UZT</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="global-search" class="search-input" placeholder="Search tracks, artists, albums..." autocomplete="off">
+                <div class="search-dropdown" id="search-dropdown"></div>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div id="album-loading" class="loading-state">
+            <div class="loader"></div>
+            <p>Loading album...</p>
+        </div>
+
+        <div id="album-error" class="error-state" style="display:none;">
+            <div class="error-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m15 9-6 6"></path>
+                    <path d="m9 9 6 6"></path>
+                </svg>
+            </div>
+            <h2>Album Not Found</h2>
+            <p>The requested album could not be found in our catalog.</p>
+            <a href="discover.html" class="btn btn-primary">Browse Catalog</a>
+        </div>
+
+        <div id="album-content" class="album-page" style="display:none;">
+            <section class="album-hero">
+                <div class="container">
+                    <div class="album-hero-grid">
+                        <div class="album-artwork">
+                            <img id="album-cover" src="" alt="" loading="lazy">
+                        </div>
+                        <div class="album-info">
+                            <div class="album-meta">
+                                <span class="album-type">Album</span>
+                                <span id="album-year" class="album-year"></span>
+                            </div>
+                            <h1 id="album-title" class="album-title"></h1>
+                            <p id="album-artist" class="album-artist"></p>
+                            <div class="album-stats">
+                                <span id="album-track-count"></span>
+                                <span class="separator">•</span>
+                                <span id="album-duration"></span>
+                            </div>
+                            <div id="album-platforms" class="platform-buttons"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="album-tracklist">
+                        <div class="tracklist-header">
+                            <span class="tracklist-num">#</span>
+                            <span class="tracklist-title">Title</span>
+                            <span class="tracklist-duration">Duration</span>
+                        </div>
+                        <div id="album-tracks" class="tracklist-body"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="more-from-artist-section" style="display:none;">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">More from <span id="artist-name-more"></span></h2>
+                    </div>
+                    <div class="albums-grid" id="more-from-artist"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">NEUTRA</span>
+                    <p class="footer-text">Professional music discovery platform.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="uzt.html">UZT Platform</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="about.html">About</a>
+                    <a href="about.html#terms">Terms</a>
+                    <a href="about.html#privacy">Privacy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEUTRA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/router.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            NEUTRA.init().then(() => {
+                NEUTRA.initAlbumPage();
+            });
+        });
+    </script>
+</body>
+</html>
