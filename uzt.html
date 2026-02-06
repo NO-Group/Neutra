@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UZT — Exclusive content on NEUTRA">
+    <meta name="theme-color" content="#000000">
+    <title>UZT — NEUTRA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NEUTRA</a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="uzt.html" class="nav-link active">UZT</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="global-search" class="search-input" placeholder="Search tracks, artists, albums..." autocomplete="off">
+                <div class="search-dropdown" id="search-dropdown"></div>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header uzt-header">
+            <div class="container">
+                <div class="uzt-badge-large">UZT</div>
+                <h1 class="page-title">Exclusive Platform</h1>
+                <p class="page-subtitle">Curated content available only on NEUTRA. Full tracks and previews, owner-controlled.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div id="uzt-empty" class="uzt-empty" style="display:none;">
+                    <div class="uzt-empty-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 12h8"></path>
+                        </svg>
+                    </div>
+                    <h3>No UZT Content Available</h3>
+                    <p>Check back later for exclusive content.</p>
+                </div>
+
+                <div id="uzt-content">
+                    <div class="uzt-grid" id="uzt-tracks"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="uzt-info-grid">
+                    <div class="uzt-info-card">
+                        <div class="uzt-info-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h4>Curated Content</h4>
+                        <p>All UZT content is hand-selected and controlled by the platform owner.</p>
+                    </div>
+                    <div class="uzt-info-card">
+                        <div class="uzt-info-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                        </div>
+                        <h4>Stream Only</h4>
+                        <p>No downloads. Experience music directly in your browser.</p>
+                    </div>
+                    <div class="uzt-info-card">
+                        <div class="uzt-info-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 18V5l12-2v13"></path>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <circle cx="18" cy="16" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h4>Full Tracks & Previews</h4>
+                        <p>Access complete tracks or previews as made available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">NEUTRA</span>
+                    <p class="footer-text">Professional music discovery platform.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="uzt.html">UZT Platform</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="about.html">About</a>
+                    <a href="about.html#terms">Terms</a>
+                    <a href="about.html#privacy">Privacy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEUTRA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/router.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            NEUTRA.init().then(() => {
+                NEUTRA.initUZTPage();
+            });
+        });
+    </script>
+</body>
+</html>
