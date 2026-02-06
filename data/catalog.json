@@ -1,0 +1,323 @@
+{
+    "_comment": "NEUTRA Catalog - Edit this file to manage your music catalog",
+    "_instructions": {
+        "adding_track": "Add a new object to the 'tracks' array with unique 'id'",
+        "adding_album": "Add a new object to the 'albums' array with unique 'id'",
+        "enabling_uzt": "Set 'uzt': true on any track to enable UZT player",
+        "removing_content": "Delete the object from the array to remove from site"
+    },
+    
+    "albums": [
+        {
+            "id": "alb_001",
+            "title": "Midnight Echoes",
+            "artist": "Luna Vale",
+            "year": 2024,
+            "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop",
+            "genre": "Electronic"
+        },
+        {
+            "id": "alb_002",
+            "title": "Urban Frequencies",
+            "artist": "Metro Pulse",
+            "year": 2024,
+            "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop",
+            "genre": "Hip-Hop"
+        },
+        {
+            "id": "alb_003",
+            "title": "Acoustic Sessions",
+            "artist": "River Stone",
+            "year": 2023,
+            "cover": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop",
+            "genre": "Acoustic"
+        },
+        {
+            "id": "alb_004",
+            "title": "Neon Dreams",
+            "artist": "Synthwave Collective",
+            "year": 2024,
+            "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop",
+            "genre": "Synthwave"
+        },
+        {
+            "id": "alb_005",
+            "title": "Silent Hours",
+            "artist": "Luna Vale",
+            "year": 2023,
+            "cover": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=400&fit=crop",
+            "genre": "Ambient"
+        },
+        {
+            "id": "alb_006",
+            "title": "Raw Cuts",
+            "artist": "The Basement Crew",
+            "year": 2024,
+            "cover": "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop",
+            "genre": "Hip-Hop"
+        }
+    ],
+    
+    "tracks": [
+        {
+            "id": "trk_001",
+            "title": "Midnight Drive",
+            "artist": "Luna Vale",
+            "album": "Midnight Echoes",
+            "albumId": "alb_001",
+            "duration": 245,
+            "trackNumber": 1,
+            "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": true,
+            "uzt": true
+        },
+        {
+            "id": "trk_002",
+            "title": "Echoes in the Dark",
+            "artist": "Luna Vale",
+            "album": "Midnight Echoes",
+            "albumId": "alb_001",
+            "duration": 198,
+            "trackNumber": 2,
+            "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": true,
+            "uzt": false
+        },
+        {
+            "id": "trk_003",
+            "title": "Neon Lights",
+            "artist": "Luna Vale",
+            "album": "Midnight Echoes",
+            "albumId": "alb_001",
+            "duration": 220,
+            "trackNumber": 3,
+            "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": false,
+            "uzt": true
+        },
+        {
+            "id": "trk_004",
+            "title": "City Pulse",
+            "artist": "Metro Pulse",
+            "album": "Urban Frequencies",
+            "albumId": "alb_002",
+            "duration": 187,
+            "trackNumber": 1,
+            "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": true,
+            "uzt": false
+        },
+        {
+            "id": "trk_005",
+            "title": "Street Dreams",
+            "artist": "Metro Pulse",
+            "album": "Urban Frequencies",
+            "albumId": "alb_002",
+            "duration": 234,
+            "trackNumber": 2,
+            "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": true,
+            "uzt": true
+        },
+        {
+            "id": "trk_006",
+            "title": "Underground Flow",
+            "artist": "Metro Pulse",
+            "album": "Urban Frequencies",
+            "albumId": "alb_002",
+            "duration": 201,
+            "trackNumber": 3,
+            "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": false,
+            "uzt": false
+        },
+        {
+            "id": "trk_007",
+            "title": "River Morning",
+            "artist": "River Stone",
+            "album": "Acoustic Sessions",
+            "albumId": "alb_003",
+            "duration": 267,
+            "trackNumber": 1,
+            "cover": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": false,
+            "uzt": false
+        },
+        {
+            "id": "trk_008",
+            "title": "Wooden Heart",
+            "artist": "River Stone",
+            "album": "Acoustic Sessions",
+            "albumId": "alb_003",
+            "duration": 289,
+            "trackNumber": 2,
+            "cover": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": true,
+            "uzt": true
+        },
+        {
+            "id": "trk_009",
+            "title": "Campfire Tales",
+            "artist": "River Stone",
+            "album": "Acoustic Sessions",
+            "albumId": "alb_003",
+            "duration": 312,
+            "trackNumber": 3,
+            "cover": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": false,
+            "uzt": false
+        },
+        {
+            "id": "trk_010",
+            "title": "Electric Sunset",
+            "artist": "Synthwave Collective",
+            "album": "Neon Dreams",
+            "albumId": "alb_004",
+            "duration": 276,
+            "trackNumber": 1,
+            "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": true,
+            "uzt": true
+        },
+        {
+            "id": "trk_011",
+            "title": "Retro Future",
+            "artist": "Synthwave Collective",
+            "album": "Neon Dreams",
+            "albumId": "alb_004",
+            "duration": 243,
+            "trackNumber": 2,
+            "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": true,
+            "uzt": false
+        },
+        {
+            "id": "trk_012",
+            "title": "Chrome Highway",
+            "artist": "Synthwave Collective",
+            "album": "Neon Dreams",
+            "albumId": "alb_004",
+            "duration": 298,
+            "trackNumber": 3,
+            "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": false,
+            "uzt": false
+        },
+        {
+            "id": "trk_013",
+            "title": "Digital Rain",
+            "artist": "Synthwave Collective",
+            "album": "Neon Dreams",
+            "albumId": "alb_004",
+            "duration": 265,
+            "trackNumber": 4,
+            "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": false,
+            "uzt": true
+        },
+        {
+            "id": "trk_014",
+            "title": "Quiet Moments",
+            "artist": "Luna Vale",
+            "album": "Silent Hours",
+            "albumId": "alb_005",
+            "duration": 345,
+            "trackNumber": 1,
+            "cover": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": false,
+            "uzt": false
+        },
+        {
+            "id": "trk_015",
+            "title": "Drift Away",
+            "artist": "Luna Vale",
+            "album": "Silent Hours",
+            "albumId": "alb_005",
+            "duration": 378,
+            "trackNumber": 2,
+            "cover": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": true,
+            "uzt": true
+        },
+        {
+            "id": "trk_016",
+            "title": "Basement Cipher",
+            "artist": "The Basement Crew",
+            "album": "Raw Cuts",
+            "albumId": "alb_006",
+            "duration": 198,
+            "trackNumber": 1,
+            "cover": "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": true,
+            "uzt": false
+        },
+        {
+            "id": "trk_017",
+            "title": "Concrete Jungle",
+            "artist": "The Basement Crew",
+            "album": "Raw Cuts",
+            "albumId": "alb_006",
+            "duration": 223,
+            "trackNumber": 2,
+            "cover": "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": false,
+            "uzt": true
+        },
+        {
+            "id": "trk_018",
+            "title": "Night Shift",
+            "artist": "The Basement Crew",
+            "album": "Raw Cuts",
+            "albumId": "alb_006",
+            "duration": 245,
+            "trackNumber": 3,
+            "cover": "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": true,
+            "uzt": false
+        },
+        {
+            "id": "trk_019",
+            "title": "Solo Flight",
+            "artist": "Aurora Keys",
+            "album": null,
+            "albumId": null,
+            "duration": 256,
+            "trackNumber": null,
+            "cover": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=400&h=400&fit=crop",
+            "featured": true,
+            "trending": true,
+            "uzt": true
+        },
+        {
+            "id": "trk_020",
+            "title": "Wanderlust",
+            "artist": "Nomad Sound",
+            "album": null,
+            "albumId": null,
+            "duration": 287,
+            "trackNumber": null,
+            "cover": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&h=400&fit=crop",
+            "featured": false,
+            "trending": true,
+            "uzt": false
+        }
+    ]
+}
