@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About NEUTRA — Professional Music Discovery Platform">
+    <meta name="theme-color" content="#000000">
+    <title>About — NEUTRA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NEUTRA</a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="uzt.html" class="nav-link">UZT</a>
+                <a href="about.html" class="nav-link active">About</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="global-search" class="search-input" placeholder="Search tracks, artists, albums..." autocomplete="off">
+                <div class="search-dropdown" id="search-dropdown"></div>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">About NEUTRA</h1>
+                <p class="page-subtitle">Professional music discovery, reimagined</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container container-narrow">
+                <div class="about-content">
+                    <div class="about-block">
+                        <h2>What is NEUTRA?</h2>
+                        <p>NEUTRA is a professional music discovery platform designed for clarity and focus. We aggregate music metadata and provide direct links to official streaming platforms where you can listen to and support artists.</p>
+                        <p>Our platform does not host music files for download. We believe in connecting listeners with artists through legitimate channels.</p>
+                    </div>
+
+                    <div class="about-block">
+                        <h2>How It Works</h2>
+                        <ul class="about-list">
+                            <li><strong>Discovery:</strong> Browse our curated catalog of tracks and albums</li>
+                            <li><strong>Information:</strong> View detailed metadata including artist, album, and duration</li>
+                            <li><strong>Redirection:</strong> Click through to your preferred streaming platform</li>
+                            <li><strong>UZT Exclusive:</strong> Selected tracks may include preview playback</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block">
+                        <h2>Supported Platforms</h2>
+                        <div class="platforms-grid">
+                            <div class="platform-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                                </svg>
+                                <span>Spotify</span>
+                            </div>
+                            <div class="platform-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg>
+                                <span>Apple Music</span>
+                            </div>
+                            <div class="platform-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                                </svg>
+                                <span>YouTube</span>
+                            </div>
+                            <div class="platform-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 12l3 3 5-5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span>Audiomack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-block" id="terms">
+                        <h2>Terms of Use</h2>
+                        <p>By using NEUTRA, you agree to the following:</p>
+                        <ul class="about-list">
+                            <li>This platform is for music discovery purposes only</li>
+                            <li>We do not provide music downloads</li>
+                            <li>All streaming links redirect to official platforms</li>
+                            <li>Content availability depends on third-party platforms</li>
+                            <li>We are not responsible for content on external sites</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block" id="privacy">
+                        <h2>Privacy</h2>
+                        <p>NEUTRA respects your privacy:</p>
+                        <ul class="about-list">
+                            <li>We do not collect personal data</li>
+                            <li>We do not use tracking cookies</li>
+                            <li>We do not require user accounts</li>
+                            <li>All browsing is anonymous</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block">
+                        <h2>UZT Platform</h2>
+                        <p>UZT is our exclusive content section. It is entirely controlled by the site owner and may feature:</p>
+                        <ul class="about-list">
+                            <li>Full track streaming (owner-enabled only)</li>
+                            <li>Preview clips</li>
+                            <li>Exclusive releases</li>
+                        </ul>
+                        <p>UZT content cannot be uploaded by users. All content is curated and managed through our internal catalog system.</p>
+                    </div>
+
+                    <div class="about-block">
+                        <h2>Contact</h2>
+                        <p>For inquiries regarding content, corrections, or partnerships, please reach out through official channels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">NEUTRA</span>
+                    <p class="footer-text">Professional music discovery platform.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="uzt.html">UZT Platform</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="about.html">About</a>
+                    <a href="about.html#terms">Terms</a>
+                    <a href="about.html#privacy">Privacy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEUTRA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/router.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            NEUTRA.init();
+        });
+    </script>
+</body>
+</html>
