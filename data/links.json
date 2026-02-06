@@ -1,0 +1,146 @@
+{
+    "_comment": "NEUTRA Links - Edit this file to manage streaming platform links",
+    "_instructions": {
+        "adding_links": "Add a new object under 'tracks' or 'albums' with the content ID as key",
+        "supported_platforms": ["spotify", "apple", "youtube", "audiomack", "uzt"],
+        "uzt_links": "For UZT, provide direct audio file URL (mp3/wav). File will NOT be downloadable.",
+        "removing_links": "Delete the platform key or entire object to remove links"
+    },
+    
+    "tracks": {
+        "trk_001": {
+            "spotify": "https://open.spotify.com/track/example1",
+            "apple": "https://music.apple.com/album/example1",
+            "youtube": "https://www.youtube.com/watch?v=example1",
+            "audiomack": "https://audiomack.com/song/example1",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        },
+        "trk_002": {
+            "spotify": "https://open.spotify.com/track/example2",
+            "apple": "https://music.apple.com/album/example2",
+            "youtube": "https://www.youtube.com/watch?v=example2"
+        },
+        "trk_003": {
+            "spotify": "https://open.spotify.com/track/example3",
+            "youtube": "https://www.youtube.com/watch?v=example3",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+        },
+        "trk_004": {
+            "spotify": "https://open.spotify.com/track/example4",
+            "apple": "https://music.apple.com/album/example4",
+            "youtube": "https://www.youtube.com/watch?v=example4",
+            "audiomack": "https://audiomack.com/song/example4"
+        },
+        "trk_005": {
+            "spotify": "https://open.spotify.com/track/example5",
+            "youtube": "https://www.youtube.com/watch?v=example5",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+        },
+        "trk_006": {
+            "spotify": "https://open.spotify.com/track/example6",
+            "apple": "https://music.apple.com/album/example6"
+        },
+        "trk_007": {
+            "spotify": "https://open.spotify.com/track/example7",
+            "apple": "https://music.apple.com/album/example7",
+            "youtube": "https://www.youtube.com/watch?v=example7"
+        },
+        "trk_008": {
+            "spotify": "https://open.spotify.com/track/example8",
+            "youtube": "https://www.youtube.com/watch?v=example8",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+        },
+        "trk_009": {
+            "spotify": "https://open.spotify.com/track/example9",
+            "apple": "https://music.apple.com/album/example9",
+            "audiomack": "https://audiomack.com/song/example9"
+        },
+        "trk_010": {
+            "spotify": "https://open.spotify.com/track/example10",
+            "apple": "https://music.apple.com/album/example10",
+            "youtube": "https://www.youtube.com/watch?v=example10",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+        },
+        "trk_011": {
+            "spotify": "https://open.spotify.com/track/example11",
+            "youtube": "https://www.youtube.com/watch?v=example11"
+        },
+        "trk_012": {
+            "spotify": "https://open.spotify.com/track/example12",
+            "apple": "https://music.apple.com/album/example12",
+            "youtube": "https://www.youtube.com/watch?v=example12"
+        },
+        "trk_013": {
+            "spotify": "https://open.spotify.com/track/example13",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+        },
+        "trk_014": {
+            "spotify": "https://open.spotify.com/track/example14",
+            "apple": "https://music.apple.com/album/example14",
+            "youtube": "https://www.youtube.com/watch?v=example14"
+        },
+        "trk_015": {
+            "spotify": "https://open.spotify.com/track/example15",
+            "youtube": "https://www.youtube.com/watch?v=example15",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+        },
+        "trk_016": {
+            "spotify": "https://open.spotify.com/track/example16",
+            "apple": "https://music.apple.com/album/example16",
+            "youtube": "https://www.youtube.com/watch?v=example16",
+            "audiomack": "https://audiomack.com/song/example16"
+        },
+        "trk_017": {
+            "spotify": "https://open.spotify.com/track/example17",
+            "audiomack": "https://audiomack.com/song/example17",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+        },
+        "trk_018": {
+            "spotify": "https://open.spotify.com/track/example18",
+            "apple": "https://music.apple.com/album/example18",
+            "youtube": "https://www.youtube.com/watch?v=example18"
+        },
+        "trk_019": {
+            "spotify": "https://open.spotify.com/track/example19",
+            "apple": "https://music.apple.com/album/example19",
+            "youtube": "https://www.youtube.com/watch?v=example19",
+            "audiomack": "https://audiomack.com/song/example19",
+            "uzt": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+        },
+        "trk_020": {
+            "spotify": "https://open.spotify.com/track/example20",
+            "youtube": "https://www.youtube.com/watch?v=example20"
+        }
+    },
+    
+    "albums": {
+        "alb_001": {
+            "spotify": "https://open.spotify.com/album/example1",
+            "apple": "https://music.apple.com/album/example1",
+            "youtube": "https://www.youtube.com/playlist?list=example1"
+        },
+        "alb_002": {
+            "spotify": "https://open.spotify.com/album/example2",
+            "apple": "https://music.apple.com/album/example2",
+            "youtube": "https://www.youtube.com/playlist?list=example2"
+        },
+        "alb_003": {
+            "spotify": "https://open.spotify.com/album/example3",
+            "apple": "https://music.apple.com/album/example3"
+        },
+        "alb_004": {
+            "spotify": "https://open.spotify.com/album/example4",
+            "apple": "https://music.apple.com/album/example4",
+            "youtube": "https://www.youtube.com/playlist?list=example4"
+        },
+        "alb_005": {
+            "spotify": "https://open.spotify.com/album/example5",
+            "youtube": "https://www.youtube.com/playlist?list=example5"
+        },
+        "alb_006": {
+            "spotify": "https://open.spotify.com/album/example6",
+            "apple": "https://music.apple.com/album/example6",
+            "youtube": "https://www.youtube.com/playlist?list=example6"
+        }
+    }
+}
