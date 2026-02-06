@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEUTRA — Professional Music Discovery Platform">
+    <meta name="theme-color" content="#000000">
+    <title>NEUTRA — Music Discovery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">NEUTRA</a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="uzt.html" class="nav-link">UZT</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="global-search" class="search-input" placeholder="Search tracks, artists, albums..." autocomplete="off">
+                <div class="search-dropdown" id="search-dropdown"></div>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Music.<br>Pure & Unfiltered.</h1>
+                <p class="hero-subtitle">Professional music discovery platform. No downloads. No distractions. Just music.</p>
+                <div class="hero-actions">
+                    <a href="discover.html" class="btn btn-primary">Start Discovering</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Tracks</h2>
+                    <a href="discover.html" class="section-link">View All</a>
+                </div>
+                <div class="tracks-grid" id="featured-tracks"></div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Albums</h2>
+                    <a href="discover.html#albums" class="section-link">View All</a>
+                </div>
+                <div class="albums-grid" id="latest-albums"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trending Now</h2>
+                </div>
+                <div class="tracks-list" id="trending-tracks"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo">NEUTRA</span>
+                    <p class="footer-text">Professional music discovery platform.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="uzt.html">UZT Platform</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="about.html">About</a>
+                    <a href="about.html#terms">Terms</a>
+                    <a href="about.html#privacy">Privacy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEUTRA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/router.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            NEUTRA.init().then(() => {
+                NEUTRA.renderFeaturedTracks('featured-tracks', 8);
+                NEUTRA.renderLatestAlbums('latest-albums', 4);
+                NEUTRA.renderTrendingTracks('trending-tracks', 10);
+            });
+        });
+    </script>
+</body>
+</html>
